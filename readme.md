@@ -9,7 +9,9 @@ second command - updates node
 third command - creates a folder called food
 ```
   >> npm install -g expo-cli 
+
   >> npm install node
+  
   >> npx expo-cli init food
 
 2. react-native-cli
