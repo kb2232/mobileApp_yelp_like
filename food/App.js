@@ -1,21 +1,16 @@
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { createStackNavigator, createAppContainer } from 'react-navigation';
+import Home from './src/screens/home';
 
-function App() {
-  return (
-    <View style={styles.container}>
-      <Text>this is the first commit</Text>
-    </View>
-  );
-}
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+const navigator = createStackNavigator(
+  {
+    Home,
   },
-});
+  {
+    initialRouteName: 'Home',
+    defaultNavigationOptions: {
+      title: 'Food'
+    }
+  }
+);
 
-export default App;
+export default createAppContainer(navigator);
