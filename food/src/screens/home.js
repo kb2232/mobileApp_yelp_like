@@ -5,7 +5,7 @@ function Home() {
   return (
     <View style={styles.container}>
       <Text>this is the page</Text>
-      <Button title="awesome" onPress={()=>console.log("i")} />
+      <Button title="awesome" onPress={()=>console.log("kunle")} />
     </View>
   );
 }
